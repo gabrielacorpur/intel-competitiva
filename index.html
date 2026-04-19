@@ -6,238 +6,148 @@
 <title>Intel Competitiva — Vector Unitech</title>
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f5f5f0; color: #1a1a1a; }
-  .container { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
-  .section { background: white; border-radius: 12px; padding: 1.25rem 1.5rem; margin-bottom: 1rem; border: 0.5px solid #e5e5e5; }
-  .section-title { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #888; margin-bottom: 14px; }
-  .hist-link { display:inline-block; font-size:12px; padding:4px 10px; border-radius:6px; text-decoration:none; margin:3px; }
-  .hist-link:hover { opacity:0.8; }
-  details summary { font-size:13px; color:#185fa5; cursor:pointer; padding:4px 0; }
-  details pre { font-size:12px; line-height:1.6; color:#444; white-space:pre-wrap; padding:12px; background:#fafafa; border-radius:8px; margin-top:10px; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f5f5f0; color: #1a1a1a; line-height: 1.6; }
+  .container { max-width: 860px; margin: 0 auto; padding: 2rem 1.5rem; }
+  .topbar { background: #1a1a1a; color: white; padding: 1.5rem; border-radius: 12px; margin-bottom: 1.5rem; }
+  .topbar h1 { font-size: 20px; font-weight: 500; margin-bottom: 4px; }
+  .topbar p { font-size: 13px; opacity: 0.55; }
+  .content { background: white; border-radius: 12px; padding: 1.5rem 2rem; border: 0.5px solid #e5e5e5; margin-bottom: 1rem; }
+  .hist { background: white; border-radius: 12px; padding: 1.25rem 1.5rem; border: 0.5px solid #e5e5e5; margin-bottom: 1rem; }
+  .hist-title { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #888; margin-bottom: 10px; }
+  h1 { font-size: 22px; font-weight: 500; margin: 1.5rem 0 0.75rem; color: #1a1a1a; }
+  h2 { font-size: 16px; font-weight: 600; margin: 2rem 0 1rem; padding-bottom: 8px; border-bottom: 0.5px solid #e5e5e5; color: #1a1a1a; }
+  h3 { font-size: 14px; font-weight: 500; margin: 1.25rem 0 0.5rem; color: #1a1a1a; padding: 10px 12px; background: #fafafa; border-left: 3px solid #e24b4a; border-radius: 0 8px 8px 0; }
+  p { font-size: 13px; color: #444; margin: 0.5rem 0; }
+  strong { color: #1a1a1a; }
+  ul { margin: 0.5rem 0 0.5rem 1.25rem; }
+  li { font-size: 13px; color: #444; margin: 4px 0; }
+  code { font-size: 12px; background: #f0f0f0; padding: 2px 6px; border-radius: 4px; color: #333; }
+  hr { border: none; border-top: 0.5px solid #e5e5e5; margin: 1.5rem 0; }
+  .table-wrap { overflow-x: auto; margin: 1rem 0; }
+  table { width: 100%; border-collapse: collapse; font-size: 12px; }
+  th { background: #f5f5f0; font-weight: 600; text-align: left; padding: 8px 10px; border-bottom: 1px solid #e5e5e5; }
+  td { padding: 8px 10px; border-bottom: 0.5px solid #f0f0f0; color: #444; vertical-align: top; }
+  tr:last-child td { border-bottom: none; }
+  .footer { text-align: center; font-size: 11px; color: #aaa; margin-top: 1rem; padding-bottom: 2rem; }
 </style>
 </head>
 <body>
 <div class="container">
-
-  <div style="background:#1a1a1a;color:white;padding:1.75rem;border-radius:12px;margin-bottom:1rem;">
-    <p style="font-size:11px;opacity:0.4;margin-bottom:6px;text-transform:uppercase;letter-spacing:0.08em;">Vector Unitech</p>
-    <h1 style="font-size:22px;font-weight:500;margin-bottom:6px;">Inteligência Competitiva</h1>
-    <p style="font-size:13px;opacity:0.55;">Semana de 19 de Abril de 2026</p>
-    <div style="display:flex;gap:8px;margin-top:16px;flex-wrap:wrap;">
-      <span style="font-size:11px;font-weight:600;padding:4px 12px;border-radius:20px;background:#fce8e8;color:#a32d2d;">0 alertas altos</span>
-      <span style="font-size:11px;font-weight:600;padding:4px 12px;border-radius:20px;background:#fef3e2;color:#854f0b;">14 players monitorados</span>
-      <span style="font-size:11px;font-weight:600;padding:4px 12px;border-radius:20px;background:#e0f5ee;color:#0f6e56;">5 oportunidades</span>
-    </div>
+  <div class="topbar">
+    <p style="font-size:11px;opacity:0.4;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:6px;">Vector Unitech</p>
+    <h1>Inteligência Competitiva</h1>
+    <p>Semana de 19/04/2026</p>
   </div>
 
-  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:1rem;">
-    <div style="background:white;border-radius:10px;padding:16px;text-align:center;border:0.5px solid #e5e5e5;">
-      <p style="font-size:11px;color:#888;margin-bottom:6px;">Notícias analisadas</p>
-      <p style="font-size:24px;font-weight:500;">666</p>
-    </div>
-    <div style="background:white;border-radius:10px;padding:16px;text-align:center;border:0.5px solid #e5e5e5;">
-      <p style="font-size:11px;color:#888;margin-bottom:6px;">Alta relevância</p>
-      <p style="font-size:24px;font-weight:500;color:#a32d2d;">0</p>
-    </div>
-    <div style="background:white;border-radius:10px;padding:16px;text-align:center;border:0.5px solid #e5e5e5;">
-      <p style="font-size:11px;color:#888;margin-bottom:6px;">Players monitorados</p>
-      <p style="font-size:24px;font-weight:500;">14</p>
-    </div>
+  <div class="content">
+    <h1>Inteligência Competitiva — Semana de 19/04/2026</h1>
+
+<hr>
+
+<h2>🚨 Movimentos de Alta Relevância</h2>
+
+<h3>1. [Produto] JSL lança programa de fidelidade "Estrada de Prêmios" — <strong>Alta</strong><span style="font-size:11px;padding:2px 8px;border-radius:20px;background:#e24b4a22;color:#e24b4a;margin-left:8px;font-weight:600;vertical-align:middle;">Alta</span></h3>
+<strong>Fontes:</strong> Portal O Carreteiro, Tecnologística, Transporte Moderno, MundoLogística, Frota&amp;Cia — publicado em 10–16 abr/2026
+
+<p>A JSL/Júlio Simões lançou o programa <strong>"Estrada de Prêmios"</strong> voltado aos caminhoneiros da frota parceira, com foco declarado em <strong>retenção e redução de viagens vazias</strong>. Motoristas acumulam pontos trocáveis por prêmios — e a empresa já sinalizou que, no futuro, será possível trocar pontos por <strong>caminhões</strong>. O programa integra benefícios, recompensas e posicionamento de marca junto ao motorista.</p>
+
+<strong>Por que importa para a Vector:</strong> A JSL é o principal player de logística com frota própria no Brasil e agora disputa diretamente o motorista autônomo com benefícios concretos. A Vector opera no mesmo ecossistema (caminhoneiro + embarcador) e compete pela lealdade desse motorista. Um programa estruturado de fidelidade da JSL pode reduzir a oferta de motoristas disponíveis para plataformas abertas como a Vector.
+
+<strong>Ação sugerida:</strong> Avaliar urgentemente o lançamento de um programa de benefícios/fidelidade próprio da Vector voltado ao motorista parceiro — especialmente cashback em combustível, seguros e descontos em peças. Monitorar as condições e mecânica do Estrada de Prêmios para benchmarking.
+
+<hr>
+
+<h3>2. [Regulatório] ANTT publica resoluções que transformam MP 1.343/2026 em operação real — <strong>Alta</strong><span style="font-size:11px;padding:2px 8px;border-radius:20px;background:#ba751722;color:#ba7517;margin-left:8px;font-weight:600;vertical-align:middle;">Alta</span></h3>
+<strong>Fontes:</strong> GOV.BR, Valor Econômico, MundoLogística, Setcesp, CNT — publicado em 19–26 mar/2026
+
+<p>A ANTT publicou duas resoluções que regulamentam a <strong>Medida Provisória 1.343/2026</strong>, tornando obrigatório o <strong>registro de fretes no CIOT</strong> e bloqueando operações abaixo do piso mínimo ainda na origem (via validação no MDF-e). A tabela foi reajustada com diesel a R$7,35/L como referência. Multas de até <strong>R$10.500</strong> por descumprimento passam a ser aplicadas a embarcadores e transportadoras. A ANTT também atualizou a tabela dias depois, com nova alta do diesel.</p>
+
+<strong>Por que importa para a Vector:</strong> A regulamentação eleva o custo de compliance para os embarcadores e pode pressionar embarcadores menores a digitalizar o processo de contratação de frete (CIOT digital). Isso favorece plataformas como a Vector, que já operam com CIOT integrado. Ao mesmo tempo, o piso mais alto pode tornar a contratação via plataforma mais transparente e competitiva frente a operações informais.
+
+<strong>Ação sugerida:</strong> Comunicar proativamente aos embarcadores clientes (Bunge, Cofco, Gerdau) as vantagens de operar via Vector para garantir conformidade automática com a nova regulamentação. Revisar comunicação de vendas destacando compliance CIOT + piso mínimo como diferencial.
+
+<hr>
+
+<h3>3. [Produto] Frete.com recebe R$150 milhões da XP e mira marketplace + crédito para caminhoneiros — <strong>Alta</strong><span style="font-size:11px;padding:2px 8px;border-radius:20px;background:#e24b4a22;color:#e24b4a;margin-left:8px;font-weight:600;vertical-align:middle;">Alta</span></h3>
+<strong>Fontes:</strong> AgFeed, pipelinevalor — publicado jan/2026
+
+<p>A <strong>Frete.com</strong> (ex-CargoX + FreteBras) recebeu aporte de R$150M da XP para escalar o braço de <strong>crédito para transportadores e caminhoneiros</strong>, além de se posicionar como "Mercado Livre da logística". A empresa já opera como unicórnio (&gt;US$1B) e conta com backing de SoftBank e Tencent.</p>
+
+<strong>Por que importa para a Vector:</strong> A Frete.com avança sobre o mesmo território estratégico da Vector — marketplace de frete agro + crédito para motorista. Com capital fresco e posicionamento de plataforma financeira integrada, pode acelerar a captura de motoristas e embarcadores com propostas de valor combinadas (frete + crédito + benefícios).
+
+<strong>Ação sugerida:</strong> Monitorar lançamentos de produto da Frete.com no segmento agro/granel. Avaliar parcerias de crédito para motoristas parceiros da Vector antes que concorrentes capturem essa posição no relacionamento.
+
+<hr>
+
+<h3>4. [Produto] Uber lança serviço de frete com vans, picapes e caminhões leves no Brasil — <strong>Alta</strong><span style="font-size:11px;padding:2px 8px;border-radius:20px;background:#e24b4a22;color:#e24b4a;margin-left:8px;font-weight:600;vertical-align:middle;">Alta</span></h3>
+<strong>Fontes:</strong> CNN Brasil, Quatro Rodas — publicado out/2025
+
+<p>O <strong>Uber</strong> entrou no mercado de frete de cargas no Brasil com o serviço "Uber Frete", operando com vans, picapes e caminhões leves em São Paulo. O serviço funciona via aplicativo, com precificação dinâmica, e mira inicialmente cargas de até 1,5 toneladas.</p>
+
+<strong>Por que importa para a Vector:</strong> Ainda que o Uber Frete comece nos segmentos leves (fora do core da Vector), a entrada de um player com 100M+ usuários e brand equity massivo sinaliza apetite crescente do Big Tech no frete rodoviário. Historicamente, essas plataformas expandem o escopo rapidamente. Além disso, o modelo compete pelo mesmo motorista de caminhão leve que pode operar na Vector.
+
+<strong>Ação sugerida:</strong> Acompanhar expansão do Uber Frete para veículos pesados e segmento agro. Reforçar diferenciais da Vector junto ao motorista de carga seca/granéis que Uber ainda não atende.
+
+<hr>
+
+<h3>5. [Regulatório] Cadastro positivo para motoristas de caminhão avança na Câmara — <strong>Alta</strong><span style="font-size:11px;padding:2px 8px;border-radius:20px;background:#ba751722;color:#ba7517;margin-left:8px;font-weight:600;vertical-align:middle;">Alta</span></h3>
+<strong>Fontes:</strong> Mundo do Automóvel para PCD, Portal da Câmara — publicado abr/2026
+
+<p>Projeto de lei que cria <strong>cadastro nacional para caminhoneiros</strong> com previsão de benefícios tributários e acesso facilitado a crédito avança na Câmara. O PL inclui motoristas de app e taxistas.</p>
+
+<strong>Por que importa para a Vector:</strong> Um cadastro nacional positivo de motoristas pode facilitar a qualificação e onboarding de motoristas parceiros, reduzir riscos de crédito e potencializar produtos financeiros para o segmento. A Vector pode se beneficiar como plataforma de acesso e validação de motoristas cadastrados.
+
+<strong>Ação sugerida:</strong> Acompanhar tramitação do PL e avaliar posicionamento da Vector como parceiro estratégico do cadastro (fonte de dados de histórico de fretes, avaliações, etc.).
+
+<hr>
+
+<h2>📦 Novos Produtos e Features</h2>
+
+<div class="table-wrap"><table><tr><th>#</th><th>Empresa</th><th>Produto/Feature</th><th>Data</th><th>Relevância</th></tr><tr><td>1</td><td><strong>JSL</strong></td><td>Programa de fidelidade "Estrada de Prêmios" — pontos, prêmios e futuramente caminhões</td><td>abr/2026</td><td>Alta</td></tr><tr><td>2</td><td><strong>TruckPad</strong></td><td>Carteira digital integrada para recebimento de frete</td><td>mar/2024</td><td>Média</td></tr><tr><td>3</td><td><strong>Fretebras</strong></td><td>Sistema de comunicação anti-fraudes com redução de 80% em golpes</td><td>set/2025</td><td>Média</td></tr><tr><td>4</td><td><strong>Fretebras</strong></td><td>IA para otimização de transporte de cargas no agronegócio</td><td>jan/2025</td><td>Média</td></tr><tr><td>5</td><td><strong>Fretebras</strong></td><td>Rede VIP — funcionalidade de confiança entre transportadoras e motoristas</td><td>abr/2024</td><td>Média</td></tr><tr><td>6</td><td><strong>Fretebras</strong></td><td>Pagamento de frete pós-pago</td><td>nov/2024</td><td>Média</td></tr><tr><td>7</td><td><strong>Frete.com</strong></td><td>Marketplace de frete + crédito para transportadores (R$150M XP)</td><td>jan/2026</td><td>Alta</td></tr><tr><td>8</td><td><strong>goFlux</strong></td><td>Posicionamento como "Mercado Livre do frete", incluso crédito</td><td>jul/2025</td><td>Média</td></tr><tr><td>9</td><td><strong>Iriom</strong></td><td>Banco digital para caminhoneiros com crédito e assistente WhatsApp</td><td>mai/2025</td><td>Média</td></tr><tr><td>10</td><td><strong>VWCO / TRATON</strong></td><td>TRATON Financial Services — soluções financeiras para caminhoneiros</td><td>jun/2025</td><td>Média</td></tr><tr><td>11</td><td><strong>ValeJá</strong></td><td>Crédito para caminhoneiros com "tanque cheio" como garantia</td><td>dez/2024</td><td>Média</td></tr><tr><td>12</td><td><strong>Uber</strong></td><td>Uber Frete — entrega com vans, picapes e caminhões leves</td><td>out/2025</td><td>Alta</td></tr></table></div>
+<hr>
+
+<h2>📣 Campanhas Observadas</h2>
+
+<div class="table-wrap"><table><tr><th>#</th><th>Empresa</th><th>Campanha</th><th>Data</th><th>Relevância</th></tr><tr><td>1</td><td><strong>JSL</strong></td><td>Lançamento do programa "Estrada de Prêmios" com cobertura massiva na mídia especializada</td><td>abr/2026</td><td>Alta</td></tr><tr><td>2</td><td><strong>Shell</strong></td><td>Celebração dos 37 anos do Clube Irmão Caminhoneiro com promoções no Dia do Motorista</td><td>jul/2025</td><td>Média</td></tr><tr><td>3</td><td><strong>Shell</strong></td><td>Integração do Clube Irmão Caminhoneiro ao Shell Box com benefícios expandidos</td><td>fev/2025</td><td>Média</td></tr><tr><td>4</td><td><strong>Ipiranga</strong></td><td>Campanha de cashback para abastecimentos com Ipimax</td><td>abr/2025</td><td>Média</td></tr><tr><td>5</td><td><strong>Fretebras</strong></td><td>Desconto no diesel para pagamentos via PIX a caminhoneiros parceiros</td><td>dez/2023</td><td>Baixa</td></tr></table></div>
+<hr>
+
+<h2>📋 Regulatório</h2>
+
+<div class="table-wrap"><table><tr><th>#</th><th>Tema</th><th>Órgão/Instância</th><th>Data</th><th>Relevância</th></tr><tr><td>1</td><td><strong>MP 1.343/2026 + Resoluções ANTT</strong> — piso mínimo do frete regulamentado, CIOT obrigatório, bloqueio na origem, multa de R$10.500</td><td>ANTT / GOV.BR</td><td>mar/2026</td><td>Alta</td></tr><tr><td>2</td><td><strong>Reajuste tabela ANTT</strong> com diesel a R$7,35/L</td><td>ANTT</td><td>mar/2026</td><td>Alta</td></tr><tr><td>3</td><td><strong>Projeto isenção de pedágio</strong> para caminhoneiros autônomos em rodovias — tramita na Câmara</td><td>Câmara dos Deputados</td><td>mar/2026</td><td>Média</td></tr><tr><td>4</td><td><strong>Cadastro positivo para caminhoneiros</strong> com benefícios tributários e acesso a crédito — tramita na Câmara</td><td>Câmara dos Deputados</td><td>abr/2026</td><td>Média</td></tr><tr><td>5</td><td><strong>Aposentadoria antecipada</strong> (até 10 anos mais cedo) para motoristas de caminhão e ônibus — lei sancionada</td><td>Federal</td><td>ago/2025</td><td>Baixa</td></tr><tr><td>6</td><td><strong>Vale-pedágio exclusivamente digital</strong> a partir de jan/2025 — ANTT</td><td>ANTT</td><td>jan/2025</td><td>Média</td></tr><tr><td>7</td><td><strong>Greve dos caminhoneiros</strong> — ultimato de 7 dias ao governo Lula por preço do diesel, movimentações em SC e MG</td><td>Categoria</td><td>mar/2026</td><td>Alta</td></tr></table></div>
+<hr>
+
+<h2>💡 Oportunidades para a Vector</h2>
+
+<strong>1. Programa de fidelidade/benefícios para motoristas parceiros</strong>
+<p>A JSL, Shell e Ipiranga estão acelerando programas de fidelidade. A Vector precisa de uma resposta estruturada — cashback em combustível, seguro de carga, pontos por frete, descontos em peças — para competir pela retenção do motorista antes que a JSL consolide liderança.</p>
+
+<strong>2. Posicionamento como plataforma de compliance regulatório para embarcadores</strong>
+<p>A nova regulamentação da ANTT (MP 1.343/2026) cria complexidade operacional para embarcadores. A Vector pode se diferenciar entregando CIOT, MDF-e e gestão de piso mínimo de forma automatizada, tornando-se o "caminho mais fácil" para o compliance.</p>
+
+<strong>3. Crédito e serviços financeiros para motoristas via parceria fintech</strong>
+<p>O segmento de fintech para caminhoneiros está em ebulição (Iriom, ValeJá, Target Bank, TRATON Financial Services). A Vector tem dados privilegiados sobre histórico de fretes e comportamento dos motoristas parceiros — esse ativo pode ser monetizado via parceria com fintechs para oferecer crédito com condições diferenciadas, criando lock-in.</p>
+
+<strong>4. Expansão de IA para precificação e match agro</strong>
+<p>A Fretebras já anunciou investimento de R$800M em IA para o agronegócio. A Vector, com foco em Bunge, Cofco e Gerdau, pode desenvolver modelos preditivos de demanda e precificação para antecipar-se à Fretebras no segmento de grãos.</p>
+
+<strong>5. Aproveitamento do cadastro positivo de motoristas (PL em tramitação)</strong>
+<p>Se aprovado, a Vector pode se credenciar como fonte de dados para o cadastro nacional, gerando visibilidade institucional e vantagens competitivas no onboarding de novos motoristas.</p>
+
+<hr>
+
+<h2>📁 Todas as capturas da semana — Destaques por Categoria</h2>
+
+<div class="table-wrap"><table><tr><th>#</th><th>Título resumido</th><th>Fonte</th><th>Data</th><th>Query</th><th>Categoria</th><th>Relevância</th></tr><tr><td>1</td><td>JSL lança Estrada de Prêmios — O Carreteiro</td><td>Portal O Carreteiro</td><td>16/04/2026</td><td>prog. fidelidade caminhoneiro</td><td>Produto</td><td>Alta</td></tr><tr><td>2</td><td>JSL lança programa de fidelidade — Tecnologística</td><td>Tecnologística</td><td>10/04/2026</td><td>prog. fidelidade caminhoneiro</td><td>Produto</td><td>Alta</td></tr><tr><td>3</td><td>Caminhoneiros da JSL trocarão pontos por prêmios e caminhões — Frota&amp;Cia</td><td>Frota&amp;Cia</td><td>10/04/2026</td><td>prog. fidelidade caminhoneiro</td><td>Produto</td><td>Alta</td></tr><tr><td>4</td><td>Estrada de Prêmios: JSL anuncia programa de benefícios — MundoLogística</td><td>MundoLogística</td><td>10/04/2026</td><td>Estrada de Prêmios JSL</td><td>Produto</td><td>Alta</td></tr><tr><td>5</td><td>JSL tenta reduzir rotatividade com fidelidade — Transporte Moderno</td><td>Transporte Moderno</td><td>10/04/2026</td><td>Estrada de Prêmios JSL</td><td>Produto</td><td>Alta</td></tr><tr><td>6</td><td>Shell integra Clube Irmão Caminhoneiro ao Shell Box</td><td>Transporte Moderno</td><td>28/02/2025</td><td>prog. fidelidade caminhoneiro</td><td>Parceria</td><td>Média</td></tr><tr><td>7</td><td>Shell celebra 37 anos do Clube Irmão Caminhoneiro</td><td>Jornal O Candeeiro</td><td>24/07/2025</td><td>benefícios motorista caminhão</td><td>Campanha</td><td>Média</td></tr><tr><td>8</td><td>Shell celebra com promoções no Dia do Motorista — Live MKT</td><td>Live MKT News</td><td>25/07/2025</td><td>benefícios motorista caminhão</td><td>Campanha</td><td>Média</td></tr><tr><td>9</td><td>Cadastro positivo para caminhoneiros avança na Câmara</td><td>Mundo do Automóvel</td><td>06/04/2026</td><td>benefícios motorista caminhão</td><td>Regulatório</td><td>Média</td></tr><tr><td>10</td><td>Ipiranga lança cashback com Ipimax</td><td>Marcas pelo Mundo</td><td>01/04/2025</td><td>cashback combustível caminhoneiro</td><td>Campanha</td><td>Média</td></tr><tr><td>11</td><td>Petrobras Premmia altera regras — fim do cashback</td><td>Passageiro de Primeira</td><td>23/10/2025</td><td>cashback combustível caminhoneiro</td><td>Produto</td><td>Baixa</td></tr><tr><td>12</td><td>Frete.com lança maior rede de postos credenciados</td><td>Blog do Caminhoneiro</td><td>18/06/2024</td><td>cashback combustível caminhoneiro</td><td>Produto</td><td>Média</td></tr><tr><td>13</td><td>ANTT publica resoluções — piso mínimo do frete real</td><td>MundoLogística</td><td>25/03/2026</td><td>ANTT resolução frete</td><td>Regulatório</td><td>Alta</td></tr><tr><td>14</td><td>ANTT regulamenta MP 1.343/2026 — mattosfilho</td><td>mattosfilho.com.br</td><td>26/03/2026</td><td>ANTT resolução frete</td><td>Regulatório</td><td>Alta</td></tr><tr><td>15</td><td>Ministério + ANTT detalham resolução piso mínimo</td><td>GOV.BR</td><td>19/03/2026</td><td>ANTT resolução frete</td><td>Regulatório</td><td>Alta</td></tr><tr><td>16</td><td>ANTT reajusta tabela com diesel a R$7,35</td><td>GOV.BR</td><td>20/03/2026</td><td>ANTT resolução frete</td><td>Regulatório</td><td>Alta</td></tr><tr><td>17</td><td>ANTT define multa de R$10,5 mil por descumprir piso</td><td>tmc.com.br</td><td>25/03/2026</td><td>ANTT resolução frete</td><td>Regulatório</td><td>Alta</td></tr><tr><td>18</td><td>Piso mínimo: nova fase regulatória STF/Congresso/ANTT</td><td>Consultor Jurídico</td><td>03/04/2026</td><td>ANTT resolução frete</td><td>Regulatório</td><td>Média</td></tr><tr><td>19</td><td>ANTT volta a reajustar tabela do frete — O Globo</td><td>O Globo</td><td>20/03/2026</td><td>ANTT resolução frete</td><td>Regulatório</td><td>Alta</td></tr><tr><td>20</td><td>Governo proíbe frete a empresas que não pagam piso</td><td>UOL Economia</td><td>18/03/2026</td><td>app frete lançamento</td><td>Regulatório</td><td>Alta</td></tr><tr><td>21</td><td>Greve dos caminhoneiros — corrida a postos em SC</td><td>ND Mais</td><td>18/03/2026</td><td>cashback combustível</td><td>Outro</td><td>Alta</td></tr><tr><td>22</td><td>Caminhoneiros dão ultimato de 7 dias ao governo Lula</td><td>ND Mais</td><td>20/03/2026</td><td>cashback combustível</td><td>Outro</td><td>Alta</td></tr><tr><td>23</td><td>Uber lança frete com vans, picapes e caminhões leves</td><td>Quatro Rodas</td><td>24/10/2025</td><td>app frete lançamento</td><td>Produto</td><td>Alta</td></tr><tr><td>24</td><td>Uber lança serviço de entregas com caminhonetes e vans — CNN</td><td>CNN Brasil</td><td>24/10/2025</td><td>app frete lançamento</td><td>Produto</td><td>Alta</td></tr><tr><td>25</td><td>goFlux quer ser "Mercado Livre do frete"</td><td>The AgriBiz</td><td>17/07/2025</td><td>app frete lançamento</td><td>Produto</td><td>Média</td></tr><tr><td>26</td><td>Frete.com recebe R$150M da XP para escalar crédito</td><td>AgFeed</td><td>12/01/2026</td><td>Fretebras novidade</td><td>Produto</td><td>Alta</td></tr><tr><td>27</td><td>Frete.com quer ser Mercado Livre da logística</td><td>pipelinevalor</td><td>06/01/2026</td><td>CargoX Brasil</td><td>Produto</td><td>Alta</td></tr><tr><td>28</td><td>Fintech caminhoneiros supera R$3 bilhões</td><td>VEJA</td><td>31/03/2026</td><td>fintech caminhoneiro</td><td>Produto</td><td>Alta</td></tr><tr><td>29</td><td>CargoX prevê liberar até R$1 bilhão em crédito em 2026</td><td>brazileconomy.com.br</td><td>02/12/2025</td><td>fintech caminhoneiro</td><td>Produto</td><td>Média</td></tr><tr><td>30</td><td>Iriom — banco digital para caminhoneiros com crédito e WhatsApp</td><td>Finsiders Brasil</td><td>26/05/2025</td><td>fintech caminhoneiro</td><td>Produto</td><td>Média</td></tr><tr><td>31</td><td>ValeJá acelera crédito para caminhoneiros</td><td>Finsiders Brasil</td><td>23/12/2024</td><td>fintech caminhoneiro</td><td>Produto</td><td>Média</td></tr><tr><td>32</td><td>VWCO lança TRATON Financial Services no Brasil</td><td>Revista Caminhoneiro</td><td>30/06/2025</td><td>fintech caminhoneiro</td><td>Produto</td><td>Média</td></tr><tr><td>33</td><td>60%+ dos caminhoneiros confiam em apps de frete</td><td>VEJA</td><td>30/01/2026</td><td>app frete lançamento</td><td>Outro</td><td>Alta</td></tr><tr><td>34</td><td>Amazon Now entrega em 15 minutos no Brasil</td><td>InfoMoney</td><td>03/03/2026</td><td>app frete lançamento</td><td>Produto</td><td>Baixa</td></tr><tr><td>35</td><td>Fretebras lança sistema anti-fraudes</td><td>TI INSIDE Online</td><td>17/09/2025</td><td>Fretebras novidade</td><td>Produto</td><td>Média</td></tr><tr><td>36</td><td>Fretebras investe R$800M em IA para agronegócio</td><td>Transporte Moderno</td><td>13/01/2025</td><td>Fretebras novidade</td><td>Produto</td><td>Média</td></tr><tr><td>37</td><td>Fretebras investe em IA para agro em 2025</td><td>Tecnologística</td><td>20/01/2025</td><td>Fretebras novidade</td><td>Produto</td><td>Média</td></tr><tr><td>38</td><td>Fretebras registra crescimento de 100x no uso de validação de motorista</td><td>IT Forum</td><td>02/04/2025</td><td>Fretebras novidade</td><td>Produto</td><td>Média</td></tr><tr><td>39</td><td>Fretebras lança pagamento pós-pago</td><td>Tecnologística</td><td>11/11/2024</td><td>Fretebras novidade</td><td>Produto</td><td>Média</td></tr><tr><td>40</td><td>TruckPad lança carteira digital</td><td>Tecnologística</td><td>13/03/2024</td><td>Truckpad lançamento</td><td>Produto</td><td>Média</td></tr><tr><td>41</td><td>Projeto isenção de pedágio para autônomos — Câmara</td><td>Tecnologística</td><td>05/03/2026</td><td>prog. fidelidade caminhoneiro</td><td>Regulatório</td><td>Média</td></tr><tr><td>42</td><td>Aposentadoria antecipada para motoristas — lei garantida</td><td>CPG Click</td><td>19/08/2025</td><td>benefícios motorista caminhão</td><td>Regulatório</td><td>Baixa</td></tr><tr><td>43</td><td>Gerdau Next expande logística com parceria Vector</td><td>StartSe</td><td>21/11/2022</td><td>embarcador digital motorista</td><td>Parceria</td><td>Alta</td></tr><tr><td>44</td><td>Bunge e Target criam a Vector</td><td>Transporte Moderno</td><td>10/05/2021</td><td>embarcador digital motorista</td><td>Parceria</td><td>Alta</td></tr><tr><td>45</td><td>Roadcard — validação por placa para vale-pedágio</td><td>Transporte Moderno</td><td>21/05/2025</td><td>embarcador digital motorista</td><td>Produto</td><td>Média</td></tr><tr><td>46</td><td>Vale-pedágio exclusivamente digital a partir de jan/2025</td><td>Portal do Trânsito</td><td>31/12/2024</td><td>embarcador digital motorista</td><td>Regulatório</td><td>Média</td></tr><tr><td>47</td><td>Governo Sergipe lança programa CNH Caminhoneiro</td><td>Tecnologística</td><td>30/09/2025</td><td>prog. fidelidade caminhoneiro</td><td>Outro</td><td>Baixa</td></tr><tr><td>48</td><td>Maior ponto de parada para caminhoneiros inaugurado na BR-163</td><td>Tecnologística</td><td>06/12/2024</td><td>prog. fidelidade caminhoneiro</td><td>Outro</td><td>Baixa</td></tr><tr><td>49</td><td>Michelin lança programa de fidelidade com benefícios</td><td>Blog do Caminhoneiro</td><td>26/08/2024</td><td>prog. fidelidade caminhoneiro</td><td>Produto</td><td>Baixa</td></tr><tr><td>50</td><td>Fretebras aprimora app com rede VIP</td><td>Frota&amp;Cia</td><td>26/03/2023</td><td>Fretebras novidade</td><td>Produto</td><td>Média</td></tr></table></div>
+<p>&gt; <strong>Nota:</strong> Das 673 capturas totais, foram priorizadas as ~50 com maior relevância estratégica para a Vector. Aproximadamente 400 capturas referem-se a vagas de emprego, equipamentos, notícias antigas (pré-2024) ou sem relação direta com o foco competitivo da Vector.</p>
+
   </div>
 
-  <div class="section">
-    <p class="section-title">🚨 Movimentos de alta relevância</p>
-    <p style="font-size:13px;color:#888;">Nenhum item de alta relevância extraído.</p>
+  <div class="hist">
+    <p class="hist-title">📁 Edições anteriores</p>
+    <a href="relatorio-2026-04-19.html" style="background:#1a1a1a;color:white;display:inline-block;font-size:12px;padding:4px 10px;border-radius:6px;text-decoration:none;margin:3px;">2026-04-19</a>
   </div>
 
-  <div class="section">
-    <p class="section-title">💡 Oportunidades para a Vector</p>
-    
-        <div style="display:flex;gap:12px;padding:12px 0;border-bottom:0.5px solid #f5f5f5;">
-          <span style="font-size:14px;font-weight:600;color:#ccc;min-width:20px;">1</span>
-          <div>
-            <p style="font-size:13px;font-weight:500;color:#1a1a1a;margin-bottom:3px;">Diferenciação no programa de benefícios ao motorista:</p>
-            <p style="font-size:12px;color:#666;line-height:1.5;">O lançamento da "Estrada de Prêmios" pela JSL valida que programas de fidelidade são eficazes para retenção. A Vector, como plataforma de frete, pode estruturar benefícios (cashback em diesel, assistência, seguro de carga) nativos no app, sem depender de operadora logística intermediária.</p>
-          </div>
-        </div>
-        <div style="display:flex;gap:12px;padding:12px 0;border-bottom:0.5px solid #f5f5f5;">
-          <span style="font-size:14px;font-weight:600;color:#ccc;min-width:20px;">2</span>
-          <div>
-            <p style="font-size:13px;font-weight:500;color:#1a1a1a;margin-bottom:3px;">Compliance automático ao piso mínimo (MP 1.343/2026):</p>
-            <p style="font-size:12px;color:#666;line-height:1.5;">A nova regulamentação cria uma dor concreta para embarcadores. A Vector pode lançar uma feature de **validação automática do CIOT e do piso mínimo** como valor agregado para clientes como Bunge, Gerdau e Cofco — reduzindo risco regulatório deles e aumentando stickiness da plataforma.</p>
-          </div>
-        </div>
-        <div style="display:flex;gap:12px;padding:12px 0;border-bottom:0.5px solid #f5f5f5;">
-          <span style="font-size:14px;font-weight:600;color:#ccc;min-width:20px;">3</span>
-          <div>
-            <p style="font-size:13px;font-weight:500;color:#1a1a1a;margin-bottom:3px;">Parceria com fintech de caminhoneiros:</p>
-            <p style="font-size:12px;color:#666;line-height:1.5;">Com R$ 3 bilhões em transações no setor, o mercado de crédito para motorista está maduro. A Vector pode integrar antecipação de frete ou crédito como benefício de plataforma, antes que a CargoX ou Fretebras consolidem esse diferencial.</p>
-          </div>
-        </div>
-        <div style="display:flex;gap:12px;padding:12px 0;border-bottom:0.5px solid #f5f5f5;">
-          <span style="font-size:14px;font-weight:600;color:#ccc;min-width:20px;">4</span>
-          <div>
-            <p style="font-size:13px;font-weight:500;color:#1a1a1a;margin-bottom:3px;">Posicionamento frente ao dado "60% confiam em apps de frete":</p>
-            <p style="font-size:12px;color:#666;line-height:1.5;">Alta adoção de apps indica abertura do caminhoneiro para plataformas digitais. É o momento de reforçar comunicação sobre benefícios exclusivos da Vector.</p>
-          </div>
-        </div>
-  </div>
-
-  <div class="section">
-    <p class="section-title">📋 Regulatório da semana</p>
-    <p style="font-size:13px;color:#888;padding:8px 0;">Nenhum item regulatório extraído.</p>
-  </div>
-
-  <div class="section">
-    <p class="section-title">📁 Edições anteriores</p>
-    <a href="relatorio-2026-04-19.html" style="background:#1a1a1a;color:white;" class="hist-link">2026-04-19</a>
-  </div>
-
-  <div class="section">
-    <p class="section-title">📄 Relatório completo</p>
-    <details>
-      <summary>Ver relatório completo desta semana</summary>
-      <pre>Tenho dados suficientes. Vou gerar o relatório semanal agora.
-
----
-
-# Inteligência Competitiva — Semana de 19 de Abril de 2026
-
----
-
-## 🚨 Movimentos de Alta Relevância
-
-### 1. JSL lança "Estrada de Prêmios" — programa de fidelidade para motoristas próprios
-**Fontes:** Portal O Carreteiro (16/04), Tecnologística (10/04), MundoLogística (10/04), Transporte Moderno (10/04), Frota&Cia (10/04)
-**Categoria:** `[Produto]` — Relevância: **Alta**
-
-A JSL (Júlio Simões Logística) lançou o programa **"Estrada de Prêmios"**, permitindo que motoristas acumulem pontos trocáveis por prêmios e, no futuro, até caminhões. A iniciativa tem foco explícito em **redução de rotatividade e viagens vazias**, atuando como mecanismo de retenção e eficiência operacional.
-
-**Por que importa para a Vector:**
-A JSL é uma das maiores transportadoras do Brasil e está usando fidelização como alavanca competitiva diretamente junto ao motorista. Se bem-sucedido, pode elevar o custo de captação de caminhoneiros no mercado — em especial os que já operam com JSL — e criar precedente para que outros embarcadores e plataformas sigam o mesmo caminho.
-
-**Ação sugerida:**
-- Mapear quais benefícios concretos o programa oferece (pontos, cashback, assistência, seguros) para posicionar a proposta da Vector de forma diferenciada.
-- Avaliar se a Vector pode acelerar lançamento ou aprimoramento de benefícios próprios ao caminhoneiro antes que o modelo JSL se consolide.
-- Monitorar se embarcadores clientes da Vector (Bunge, Gerdau, Cofco) adotarão modelos semelhantes.
-
----
-
-### 2. Fintech para caminhoneiros supera R$ 3 bilhões em transações
-**Fonte:** VEJA (31/03/2026)
-**Categoria:** `[Produto]` / `[Parceria]` — Relevância: **Alta**
-
-Uma fintech do setor logístico voltada ao caminhoneiro atingiu R$ 3 bilhões em transações, sinalizando **maturação do segmento de serviços financeiros para motoristas**. No mesmo período, a CargoX (concorrente direto da Vector) anunciou previsão de liberar até **R$ 1 bilhão em crédito em 2026** via seu braço fintech.
-
-**Por que importa para a Vector:**
-Serviços financeiros (crédito, antecipação de frete, cartão) estão se tornando parte do pacote de atração de caminhoneiros. A CargoX está usando crédito como diferencial competitivo e de fidelização — o que representa pressão direta sobre a base de motoristas da Vector.
-
-**Ação sugerida:**
-- Avaliar parceria ou integração com fintech de caminhoneiros como benefício embarcado na plataforma.
-- Verificar se a oferta de antecipação de frete da Vector está competitiva frente ao que CargoX está oferecendo.
-
----
-
-## 📦 Novos Produtos e Features
-
-| Data | Player | Produto/Feature | Fonte |
-|------|--------|----------------|-------|
-| 10/04/2026 | JSL | "Estrada de Prêmios" — acúmulo de pontos por viagens, troca por prêmios e caminhões | Tecnologística / Transporte Moderno |
-| 30/01/2026 | Mercado apps de frete | 60%+ dos caminhoneiros confiam em apps de frete para aumentar renda | VEJA |
-| 31/03/2026 | Fintech (setor) | Fintech de caminhoneiros supera R$ 3 bi em transações | VEJA |
-
----
-
-## 📣 Campanhas Observadas
-
-| Data | Player | Campanha | Fonte |
-|------|--------|---------|-------|
-| 10-16/04/2026 | JSL | Cobertura ampla do lançamento "Estrada de Prêmios" com foco em retenção de motoristas | Múltiplas fontes |
-
----
-
-## 📋 Regulatório
-
-### MP 1.343/2026 — Piso Mínimo do Frete: nova fase operacional
-**Período:** março–abril 2026 | **Relevância:** **Alta**
-
-O governo publicou a **MP 1.343/2026** e a ANTT editou resoluções complementares (25 mar 2026) que tornam o piso mínimo do frete **operacionalmente vinculante**:
-
-- **Fiscalização na origem:** cargas com frete abaixo do piso são barradas antes de sair.
-- **Multa de R$ 10.500** e **suspensão de registro** para quem descumprir.
-- **CIOT obrigatório** para registro de operações.
-- **Piso reajustado** com base no diesel a R$ 7,35 (atualizado em mar 2026).
-- Congresso e STF ainda debatem aspectos jurídicos, mas a operação já está em andamento (Consultor Jurídico, 03/04/2026).
-
-**Impacto para a Vector:**
-- Embarcadores clientes (Bunge, Gerdau, Cofco) precisarão garantir conformidade em todos os fretes contratados via plataforma.
-- A Vector pode posicionar seu sistema de gestão como ferramenta de compliance automático ao piso mínimo.
-- Risco: plataformas que não integrarem verificação do piso podem ser responsabilizadas.
-
----
-
-### Cadastro Nacional de Caminhoneiros avança na Câmara
-**Fonte:** Mundo do Automóvel para PCD (06/04/2026)
-
-Projeto prevê **cadastro positivo** para motoristas de caminhão com benefícios associados (crédito, seguros, regulação). Ainda em tramitação, mas sinaliza tendência de formalização do setor.
-
----
-
-## 💡 Oportunidades para a Vector
-
-1. **Diferenciação no programa de benefícios ao motorista:** O lançamento da "Estrada de Prêmios" pela JSL valida que programas de fidelidade são eficazes para retenção. A Vector, como plataforma de frete, pode estruturar benefícios (cashback em diesel, assistência, seguro de carga) nativos no app, sem depender de operadora logística intermediária.
-
-2. **Compliance automático ao piso mínimo (MP 1.343/2026):** A nova regulamentação cria uma dor concreta para embarcadores. A Vector pode lançar uma feature de **validação automática do CIOT e do piso mínimo** como valor agregado para clientes como Bunge, Gerdau e Cofco — reduzindo risco regulatório deles e aumentando stickiness da plataforma.
-
-3. **Parceria com fintech de caminhoneiros:** Com R$ 3 bilhões em transações no setor, o mercado de crédito para motorista está maduro. A Vector pode integrar antecipação de frete ou crédito como benefício de plataforma, antes que a CargoX ou Fretebras consolidem esse diferencial.
-
-4. **Posicionamento frente ao dado "60% confiam em apps de frete":** Alta adoção de apps indica abertura do caminhoneiro para plataformas digitais. É o momento de reforçar comunicação sobre benefícios exclusivos da Vector.
-
----
-
-## 📁 Todas as capturas da semana — Notícias de 2026 relevantes
-
-| Data | Título | Fonte | Query | Relevância |
-|------|--------|-------|-------|-----------|
-| 18/04/2026 | *(ruído — apostas esportivas)* | UFPB | app frete | — |
-| 16/04/2026 | JSL lança programa de fidelidade para caminhoneiro | Portal O Carreteiro | fidelidade caminhoneiro | Alta |
-| 16/04/2026 | Simm oferece 314 vagas em Salvador (menção motorista) | Aratu On | benefícios motorista | Baixa |
-| 14/04/2026 | Vagas Sine Congonhas com benefícios para motoristas | Jornal Voz Ativa | cartão benefício / benefícios | Baixa |
-| 10/04/2026 | JSL lança programa fidelidade com foco em retenção | Tecnologística | fidelidade caminhoneiro | Alta |
-| 10/04/2026 | Estrada de Prêmios: JSL anuncia programa de benefícios | MundoLogística | Estrada de Prêmios JSL | Alta |
-| 10/04/2026 | JSL tenta reduzir rotatividade com fidelidade | Transporte Moderno | Estrada de Prêmios JSL | Alta |
-| 10/04/2026 | Caminhoneiros da JSL poderão trocar pontos por prêmios e caminhões | Frota&Cia | fidelidade caminhoneiro | Alta |
-| 06/04/2026 | Cadastro positivo para motoristas avança na Câmara | Mundo do Automóvel PCD | benefícios motorista | Média |
-| 06/04/2026 | Novas regras da ANTT: vai melhorar ou ficar mais difícil de burlar? | Blog do Caminhoneiro | ANTT resolução | Média |
-| 03/04/2026 | Piso mínimo frete: nova fase regulatória (ANTT, Congresso, STF) | Consultor Jurídico | ANTT resolução | Alta |
-| 31/03/2026 | Fintech para caminhoneiros supera R$ 3 bilhões em transações | VEJA | fintech caminhoneiro | Alta |
-| 26/03/2026 | ANTT regulamenta MP do piso mínimo e barra carga irregular na origem | Congresso em Foco | ANTT resolução | Alta |
-| 26/03/2026 | ANTT regulamenta medidas de fiscalização do piso (MP 1.343/2026) | mattosfilho.com.br | ANTT resolução | Alta |
-| 26/03/2026 | ANTT reajusta piso mínimo com base no diesel | CNT | ANTT resolução | Alta |
-| 25/03/2026 | ANTT publica resoluções que transformam MP em operação real | MundoLogística | ANTT resolução | Alta |
-| 25/03/2026 | ANTT define multa de R$ 10,5 mil por descumprir piso do frete | tmc.com.br | ANTT resolução | Alta |
-| 25/03/2026 | ANTT endurece fiscalização para garantir piso mínimo | Jornal Opção | ANTT resolução | Alta |
-| 25/03/2026 | ANTT regulamenta punição de empresas que descumprem tabela | InfoMoney | ANTT resolução | Alta |
-| 20/03/2026 | ANTT volta a reajustar tabela do frete (variação diesel) | O Globo | ANTT resolução | Média |
-| 20/03/2026 | ANTT atualiza tabela — piso a R$ 7,35 com base no diesel | GOV.BR | ANTT resolução | Média |
-| 19/03/2026 | Governo publica MP que obriga registro e bloqueia fretes fora do piso | GOV.BR | ANTT resolução | Alta |
-| 18/03/2026 | Governo vai proibir frete a empresas que não pagam preço mínimo | UOL Economia | app frete | Alta |
-| 05/03/2026 | Projeto na Câmara prevê isenção de pedágio para caminhoneiros autônomos | Tecnologística | fidelidade caminhoneiro | Média |
-| 03/03/2026 | Amazon estreia entrega em 15 minutos no Brasil (Amazon Now) | InfoMoney / TecMundo | app frete | Baixa |
-| 30/01/2026 | Mais de 60% dos caminhoneiros confiam em apps de frete para aumentar renda | VEJA | app frete | Média |
-| 22/01/2026 | ANTT reajusta tabela de frete com nova metodologia para 2026 | Blog do Caminhoneiro | ANTT resolução | Média |
-| 20/01/2026 | ANTT atualiza frete — nova tabela entra em vigor (jan 2026) | Agência iNFRA | ANTT resolução | Média |
-| 12/01/2026 | *(ruído — Petrobras Premmia cupons desconto)* | Revista Fórum | cashback combustível | — |
-
----
-
-> **Nota metodológica:** A query `logtech Brasil` retornou predominantemente resultados sobre a Logitech (periféricos de informática), sem capturas relevantes sobre logtechs do setor de frete. Recomenda-se refinar essa query para `logtech frete Brasil` ou `startup logística Brasil` na próxima coleta.
-</pre>
-    </details>
-  </div>
-
-  <p style="text-align:center;font-size:11px;color:#aaa;margin-top:1.5rem;padding-bottom:2rem;">Gerado em 19/04/2026 · gabrielacorpur.github.io/intel-competitiva</p>
-
+  <p class="footer">gabrielacorpur.github.io/intel-competitiva</p>
 </div>
 </body>
 </html>
