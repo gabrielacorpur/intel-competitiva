@@ -8,69 +8,94 @@
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f5f5f0; color: #1a1a1a; }
   .container { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
-  .header { background: #1a1a1a; color: white; padding: 2rem 1.5rem; margin-bottom: 1.5rem; border-radius: 12px; }
-  .header h1 { font-size: 20px; font-weight: 500; margin-bottom: 6px; }
-  .header p { font-size: 13px; opacity: 0.6; }
-  .badges { display: flex; gap: 8px; margin-top: 12px; flex-wrap: wrap; }
-  .badge { font-size: 11px; padding: 4px 10px; border-radius: 20px; font-weight: 500; }
-  .badge-red { background: #fce8e8; color: #a32d2d; }
-  .badge-amber { background: #fef3e2; color: #854f0b; }
-  .badge-teal { background: #e0f5ee; color: #0f6e56; }
-  .section { background: white; border-radius: 12px; padding: 1.25rem; margin-bottom: 1rem; border: 0.5px solid #e5e5e5; }
-  .section-title { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #888; margin-bottom: 12px; }
-  .alert-card { border-left: 3px solid #e24b4a; padding: 10px 12px; margin-bottom: 8px; background: #fafafa; border-radius: 0 8px 8px 0; }
-  .alert-card:last-child { margin-bottom: 0; }
-  .alert-title { font-size: 13px; color: #1a1a1a; line-height: 1.4; }
-  .opp-item { display: flex; gap: 12px; padding: 10px 0; border-bottom: 0.5px solid #f0f0f0; }
-  .opp-item:last-child { border-bottom: none; }
-  .opp-num { font-size: 13px; font-weight: 600; color: #888; min-width: 20px; }
-  .opp-title { font-size: 13px; font-weight: 500; color: #1a1a1a; margin-bottom: 2px; }
-  .opp-desc { font-size: 12px; color: #666; line-height: 1.5; }
-  .hist-link { display: inline-block; font-size: 12px; padding: 4px 10px; border-radius: 6px; background: #f0f0f0; color: #444; text-decoration: none; margin: 3px; }
-  .hist-link.active { background: #1a1a1a; color: white; }
-  .hist-link:hover { background: #ddd; }
-  .footer { text-align: center; font-size: 11px; color: #aaa; margin-top: 1.5rem; }
-  .full-report { margin-top: 8px; }
-  .full-report summary { font-size: 13px; color: #185FA5; cursor: pointer; padding: 8px 0; }
-  .full-report pre { font-size: 12px; line-height: 1.6; color: #444; white-space: pre-wrap; padding: 12px; background: #fafafa; border-radius: 8px; margin-top: 8px; }
+  .section { background: white; border-radius: 12px; padding: 1.25rem 1.5rem; margin-bottom: 1rem; border: 0.5px solid #e5e5e5; }
+  .section-title { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #888; margin-bottom: 14px; }
+  .hist-link { display:inline-block; font-size:12px; padding:4px 10px; border-radius:6px; text-decoration:none; margin:3px; }
+  .hist-link:hover { opacity:0.8; }
+  details summary { font-size:13px; color:#185fa5; cursor:pointer; padding:4px 0; }
+  details pre { font-size:12px; line-height:1.6; color:#444; white-space:pre-wrap; padding:12px; background:#fafafa; border-radius:8px; margin-top:10px; }
 </style>
 </head>
 <body>
 <div class="container">
-  <div class="header">
-    <h1>Inteligência Competitiva — Vector Unitech</h1>
-    <p>Inteligência Competitiva — Semana de 19 de Abril de 2026</p>
-    <div class="badges">
-      <span class="badge badge-red">Alta relevância</span>
-      <span class="badge badge-amber">Mercado logístico</span>
-      <span class="badge badge-teal">Oportunidades</span>
+
+  <div style="background:#1a1a1a;color:white;padding:1.75rem;border-radius:12px;margin-bottom:1rem;">
+    <p style="font-size:11px;opacity:0.4;margin-bottom:6px;text-transform:uppercase;letter-spacing:0.08em;">Vector Unitech</p>
+    <h1 style="font-size:22px;font-weight:500;margin-bottom:6px;">Inteligência Competitiva</h1>
+    <p style="font-size:13px;opacity:0.55;">Semana de 19 de Abril de 2026</p>
+    <div style="display:flex;gap:8px;margin-top:16px;flex-wrap:wrap;">
+      <span style="font-size:11px;font-weight:600;padding:4px 12px;border-radius:20px;background:#fce8e8;color:#a32d2d;">0 alertas altos</span>
+      <span style="font-size:11px;font-weight:600;padding:4px 12px;border-radius:20px;background:#fef3e2;color:#854f0b;">14 players monitorados</span>
+      <span style="font-size:11px;font-weight:600;padding:4px 12px;border-radius:20px;background:#e0f5ee;color:#0f6e56;">5 oportunidades</span>
+    </div>
+  </div>
+
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:1rem;">
+    <div style="background:white;border-radius:10px;padding:16px;text-align:center;border:0.5px solid #e5e5e5;">
+      <p style="font-size:11px;color:#888;margin-bottom:6px;">Notícias analisadas</p>
+      <p style="font-size:24px;font-weight:500;">666</p>
+    </div>
+    <div style="background:white;border-radius:10px;padding:16px;text-align:center;border:0.5px solid #e5e5e5;">
+      <p style="font-size:11px;color:#888;margin-bottom:6px;">Alta relevância</p>
+      <p style="font-size:24px;font-weight:500;color:#a32d2d;">0</p>
+    </div>
+    <div style="background:white;border-radius:10px;padding:16px;text-align:center;border:0.5px solid #e5e5e5;">
+      <p style="font-size:11px;color:#888;margin-bottom:6px;">Players monitorados</p>
+      <p style="font-size:24px;font-weight:500;">14</p>
     </div>
   </div>
 
   <div class="section">
     <p class="section-title">🚨 Movimentos de alta relevância</p>
-    
-        <div class="alert-card" style="border-left-color: #E24B4A">
-            <p class="alert-title">JSL lança "Estrada de Prêmios" — programa de fidelidade para motoristas próprios</p>
-        </div>
-        <div class="alert-card" style="border-left-color: #BA7517">
-            <p class="alert-title">Fintech para caminhoneiros supera R$ 3 bilhões em transações</p>
-        </div>
+    <p style="font-size:13px;color:#888;">Nenhum item de alta relevância extraído.</p>
   </div>
 
   <div class="section">
     <p class="section-title">💡 Oportunidades para a Vector</p>
     
+        <div style="display:flex;gap:12px;padding:12px 0;border-bottom:0.5px solid #f5f5f5;">
+          <span style="font-size:14px;font-weight:600;color:#ccc;min-width:20px;">1</span>
+          <div>
+            <p style="font-size:13px;font-weight:500;color:#1a1a1a;margin-bottom:3px;">Diferenciação no programa de benefícios ao motorista:</p>
+            <p style="font-size:12px;color:#666;line-height:1.5;">O lançamento da "Estrada de Prêmios" pela JSL valida que programas de fidelidade são eficazes para retenção. A Vector, como plataforma de frete, pode estruturar benefícios (cashback em diesel, assistência, seguro de carga) nativos no app, sem depender de operadora logística intermediária.</p>
+          </div>
+        </div>
+        <div style="display:flex;gap:12px;padding:12px 0;border-bottom:0.5px solid #f5f5f5;">
+          <span style="font-size:14px;font-weight:600;color:#ccc;min-width:20px;">2</span>
+          <div>
+            <p style="font-size:13px;font-weight:500;color:#1a1a1a;margin-bottom:3px;">Compliance automático ao piso mínimo (MP 1.343/2026):</p>
+            <p style="font-size:12px;color:#666;line-height:1.5;">A nova regulamentação cria uma dor concreta para embarcadores. A Vector pode lançar uma feature de **validação automática do CIOT e do piso mínimo** como valor agregado para clientes como Bunge, Gerdau e Cofco — reduzindo risco regulatório deles e aumentando stickiness da plataforma.</p>
+          </div>
+        </div>
+        <div style="display:flex;gap:12px;padding:12px 0;border-bottom:0.5px solid #f5f5f5;">
+          <span style="font-size:14px;font-weight:600;color:#ccc;min-width:20px;">3</span>
+          <div>
+            <p style="font-size:13px;font-weight:500;color:#1a1a1a;margin-bottom:3px;">Parceria com fintech de caminhoneiros:</p>
+            <p style="font-size:12px;color:#666;line-height:1.5;">Com R$ 3 bilhões em transações no setor, o mercado de crédito para motorista está maduro. A Vector pode integrar antecipação de frete ou crédito como benefício de plataforma, antes que a CargoX ou Fretebras consolidem esse diferencial.</p>
+          </div>
+        </div>
+        <div style="display:flex;gap:12px;padding:12px 0;border-bottom:0.5px solid #f5f5f5;">
+          <span style="font-size:14px;font-weight:600;color:#ccc;min-width:20px;">4</span>
+          <div>
+            <p style="font-size:13px;font-weight:500;color:#1a1a1a;margin-bottom:3px;">Posicionamento frente ao dado "60% confiam em apps de frete":</p>
+            <p style="font-size:12px;color:#666;line-height:1.5;">Alta adoção de apps indica abertura do caminhoneiro para plataformas digitais. É o momento de reforçar comunicação sobre benefícios exclusivos da Vector.</p>
+          </div>
+        </div>
+  </div>
+
+  <div class="section">
+    <p class="section-title">📋 Regulatório da semana</p>
+    <p style="font-size:13px;color:#888;padding:8px 0;">Nenhum item regulatório extraído.</p>
   </div>
 
   <div class="section">
     <p class="section-title">📁 Edições anteriores</p>
-    <a href="relatorio-2026-04-19.html" class="hist-link active">2026-04-19</a>
+    <a href="relatorio-2026-04-19.html" style="background:#1a1a1a;color:white;" class="hist-link">2026-04-19</a>
   </div>
 
   <div class="section">
     <p class="section-title">📄 Relatório completo</p>
-    <details class="full-report">
+    <details>
       <summary>Ver relatório completo desta semana</summary>
       <pre>Tenho dados suficientes. Vou gerar o relatório semanal agora.
 
@@ -211,7 +236,8 @@ Projeto prevê **cadastro positivo** para motoristas de caminhão com benefício
     </details>
   </div>
 
-  <p class="footer">Gerado em 19/04/2026 · gabrielacorpur.github.io/intel-competitiva</p>
+  <p style="text-align:center;font-size:11px;color:#aaa;margin-top:1.5rem;padding-bottom:2rem;">Gerado em 19/04/2026 · gabrielacorpur.github.io/intel-competitiva</p>
+
 </div>
 </body>
 </html>
